@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - StoreMX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+        }
+        
+        .wrapper {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+        
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 30px;
+            text-align: center;
+            color: white;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+        
+        .header h1 {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 10px 0;
+            letter-spacing: -0.5px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.95;
+            margin: 8px 0 0 0;
+        }
+        
+        /* Content */
+        .content {
+            padding: 40px 30px;
+        }
+        
+        .greeting {
+            margin-bottom: 30px;
+        }
+        
+        .greeting h2 {
+            font-size: 22px;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+        
+        .greeting p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+        
+        /* Status Section */
+        .status-section {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 25px 0;
+            border-radius: 6px;
+        }
+        
+        .status-section h3 {
+            color: #667eea;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .status-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .status-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .status-badge {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-right: 12px;
+            white-space: nowrap;
+        }
+        
+        .status-date {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        /* Tracking ID Section */
+        .tracking-section {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border: 2px dashed #667eea;
+            padding: 25px;
+            margin: 25px 0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .tracking-section h3 {
+            color: #666;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .tracking-id {
+            font-size: 28px;
+            font-weight: 700;
+            color: #667eea;
+            letter-spacing: 2px;
+            font-family: 'Courier New', monospace;
+            margin-bottom: 10px;
+            word-break: break-all;
+        }
+        
+        .tracking-note {
+            color: #888;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        
+        /* Order Summary */
+        .summary-section {
+            margin: 30px 0;
+        }
+        
+        .summary-section h3 {
+            color: #2c3e50;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .summary-table {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .summary-row:last-child {
+            border-bottom: none;
+        }
+        
+        .summary-label {
+            color: #666;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .summary-value {
+            color: #2c3e50;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .summary-row.total {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            padding: 16px 12px;
+            margin: 0 -12px;
+            border-radius: 6px;
+        }
+        
+        .summary-row.total .summary-label {
+            color: #667eea;
+            font-weight: 700;
+            font-size: 15px;
+        }
+        
+        .summary-row.total .summary-value {
+            color: #667eea;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        /* Delivery Info */
+        .delivery-info {
+            background: #e8f4f8;
+            border-left: 4px solid #00a8cc;
+            padding: 16px;
+            margin: 20px 0;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        
+        .delivery-info strong {
+            color: #00a8cc;
+        }
+        
+        /* Items List */
+        .items-section {
+            background: #f8f9fa;
+            padding: 16px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        
+        .items-label {
+            color: #666;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        
+        .items-content {
+            color: #2c3e50;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center;
+        }
+        
+        .footer-message {
+            color: #666;
+            font-size: 13px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+        
+        .footer-links {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .footer-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 10px;
+        }
+        
+        .social-links {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e0e0e0;
+        }
+        
+        .social-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 12px;
+            margin: 0 8px;
+        }
+        
+        /* Divider */
+        .divider {
+            height: 1px;
+            background: #e0e0e0;
+            margin: 25px 0;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+            
+            .header {
+                padding: 30px 20px;
+            }
+            
+            .header h1 {
+                font-size: 24px;
+            }
+            
+            .tracking-id {
+                font-size: 22px;
+            }
+            
+            .summary-row {
+                flex-direction: column;
+            }
+            
+            .summary-value {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- Header -->
+            <div class="header">
+                <div class="logo">📦 StoreMX</div>
+                <h1>Order Confirmed!</h1>
+                <p>Thank you for your purchase</p>
+            </div>
+            
+            <!-- Content -->
+            <div class="content">
+                <!-- Greeting -->
+                <div class="greeting">
+                    <h2>Hello {{customer_name}},</h2>
+                    <p>We're thrilled to confirm that your order has been successfully placed and is now being prepared for shipment.</p>
+                    <p style="margin-top: 12px;">We'll keep you updated every step of the way with tracking notifications.</p>
+                </div>
+                
+                <!-- Order Status -->
+                <div class="status-section">
+                    <h3>📊 Order Status</h3>
+                    <div class="status-item">
+                        <span>Order placed on</span>
+                        <span style="margin-left: auto; color: #2c3e50; font-weight: 600;">{{order_date}}</span>
+                    </div>
+                    <div style="margin-top: 12px; padding-top: 12px; border-top: 1px solid #ddd;">
+                        <span class="status-badge">⚙️ Processing</span>
+                    </div>
+                </div>
+                
+                <!-- Tracking ID -->
+                <div class="tracking-section">
+                    <h3>📍 Your Tracking ID</h3>
+                    <div class="tracking-id">{{tracking_id}}</div>
+                    <div class="tracking-note">
+                        Keep this ID handy to track your shipment status. You'll receive shipping updates via email.
+                    </div>
+                </div>
+                
+                <!-- Order Summary -->
+                <div class="summary-section">
+                    <h3>📋 Order Summary</h3>
+                    
+                    <div class="summary-table">
+                        <div class="summary-row">
+                            <span class="summary-label">Subtotal</span>
+                            <span class="summary-value">₹{{total_amount}}</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Number of Items</span>
+                            <span class="summary-value">{{item_count}} items</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Estimated Delivery</span>
+                            <span class="summary-value">{{estimated_delivery}}</span>
+                        </div>
+                        
+                        <div class="summary-row">
+                            <span class="summary-label">Delivery Type</span>
+                            <span class="summary-value">Standard Shipping</span>
+                        </div>
+                        
+                        <div class="summary-row total">
+                            <span class="summary-label">Total Order Value</span>
+                            <span class="summary-value">₹{{total_amount}}</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Items -->
+                <div class="items-section">
+                    <div class="items-label">📦 Items Ordered</div>
+                    <div class="items-content">{{order_items}}</div>
+                </div>
+                
+                <!-- Delivery Info -->
+                <div class="delivery-info">
+                    <strong>✅ Next Steps:</strong><br>
+                    • Your order is being prepared<br>
+                    • You'll receive a shipping notification when dispatched<br>
+                    • Track your order using your Tracking ID above<br>
+                    • Estimated delivery: {{estimated_delivery}}
+                </div>
+                
+                <div class="divider"></div>
+                
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="footer-message">
+                        Have questions? Reply to this email or contact our customer support team.
+                    </div>
+                    
+                    <div class="footer-message" style="font-size: 12px; color: #999;">
+                        This is an automated email. Please do not reply to this email address.<br>
+                        Contact us at: support@storemx.com
+                    </div>
+                    
+                    <div class="footer-links">
+                        <a href="#" class="footer-link">Track Order</a> • 
+                        <a href="#" class="footer-link">View Account</a> • 
+                        <a href="#" class="footer-link">Help Center</a>
+                    </div>
+                    
+                    <div style="margin-top: 15px; font-size: 12px; color: #999;">
+                        © 2026 StoreMX. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1297 @@
+[
+  {
+    "id": "1",
+    "name": "Wireless Noise Cancelling Headphones",
+    "description": "Premium wireless headphones with active noise cancellation, 30-hour battery life, and ultra-comfortable design. Perfect for music lovers and professionals.",
+    "price": 3999,
+    "originalPrice": 6999,
+    "category": "electronics",
+    "rating": 4.5,
+    "reviewCount": 2847,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=800&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=800&h=800&fit=crop"
+    ],
+    "inStock": true,
+    "stockCount": 45,
+    "brand": "AudioPro",
+    "features": ["Active Noise Cancellation", "30-hour battery", "Wireless", "Premium comfort"]
+  },
+  {
+    "id": "2",
+    "name": "4K Ultra HD Smart TV",
+    "description": "55-inch 4K Ultra HD Smart TV with HDR, built-in apps, and stunning picture quality. Perfect for movie nights and gaming.",
+    "price": 29999,
+    "originalPrice": 49999,
+    "category": "electronics",
+    "rating": 4.7,
+    "reviewCount": 1234,
+    "image": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1593642632823-8f785ba67e45?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 20,
+    "brand": "Samsung",
+    "features": ["4K Resolution", "HDR Support", "Smart Apps", "Voice Control"]
+  },
+  {
+    "id": "3",
+    "name": "Classic Cotton T-Shirt",
+    "description": "Comfortable everyday cotton t-shirt available in multiple colors. Perfect for casual wear.",
+    "price": 499,
+    "originalPrice": 999,
+    "category": "fashion",
+    "rating": 4.2,
+    "reviewCount": 567,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 150,
+    "brand": "ComfortWear",
+    "features": ["100% Cotton", "Breathable", "Multiple colors", "Easy care"]
+  },
+  {
+    "id": "4",
+    "name": "Stainless Steel Kitchen Knife Set",
+    "description": "Professional 6-piece knife set with ergonomic handles and sharp stainless steel blades.",
+    "price": 2499,
+    "originalPrice": 4999,
+    "category": "home",
+    "rating": 4.6,
+    "reviewCount": 890,
+    "image": "https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 35,
+    "brand": "ChefPro",
+    "features": ["6-piece set", "Stainless steel", "Ergonomic handles", "Storage block included"]
+  },
+  {
+    "id": "5",
+    "name": "The Great Gatsby - Hardcover",
+    "description": "Classic American novel by F. Scott Fitzgerald. Beautifully bound hardcover edition.",
+    "price": 399,
+    "originalPrice": 799,
+    "category": "books",
+    "rating": 4.8,
+    "reviewCount": 2100,
+    "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 60,
+    "brand": "Penguin Classics",
+    "features": ["Hardcover", "Classic edition", "340 pages", "Beautiful binding"]
+  },
+  {
+    "id": "6",
+    "name": "Professional Basketball",
+    "description": "Official size professional basketball with premium grip. Perfect for games and training.",
+    "price": 1299,
+    "originalPrice": 1999,
+    "category": "sports",
+    "rating": 4.4,
+    "reviewCount": 345,
+    "image": "https://images.unsplash.com/photo-1546519638-68eea0fec96f?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1546519638-68eea0fec96f?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 75,
+    "brand": "SportsMax",
+    "features": ["Official size", "Premium grip", "Durable leather", "Game ready"]
+  },
+  {
+    "id": "7",
+    "name": "Organic Skincare Set",
+    "description": "Complete skincare routine with natural and organic ingredients. Includes cleanser, toner, and moisturizer.",
+    "price": 1799,
+    "originalPrice": 3499,
+    "category": "beauty",
+    "rating": 4.6,
+    "reviewCount": 612,
+    "image": "https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1556228578-8c89e6adf883?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 40,
+    "brand": "NaturalGlow",
+    "features": ["Organic", "Cruelty-free", "3-piece set", "All skin types"]
+  },
+  {
+    "id": "8",
+    "name": "Gaming Mechanical Keyboard RGB",
+    "description": "High-performance mechanical keyboard with RGB lighting and custom switches for gaming.",
+    "price": 7999,
+    "originalPrice": 11999,
+    "category": "electronics",
+    "rating": 4.7,
+    "reviewCount": 1050,
+    "image": "https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 55,
+    "brand": "TechGear",
+    "features": ["Mechanical Switches", "RGB Lighting", "Programmable", "USB-C"]
+  },
+  {
+    "id": "9",
+    "name": "Yoga Mat Premium Non-Slip",
+    "description": "6mm thick premium yoga mat with natural rubber, ideal for all fitness levels.",
+    "price": 1599,
+    "originalPrice": 2499,
+    "category": "sports",
+    "rating": 4.5,
+    "reviewCount": 780,
+    "image": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 100,
+    "brand": "FitLife",
+    "features": ["6mm Thick", "Non-slip", "Eco-friendly", "Lightweight"]
+  },
+  {
+    "id": "10",
+    "name": "Stainless Steel Water Bottle 1L",
+    "description": "Durable insulated water bottle keeps drinks hot or cold for 24 hours.",
+    "price": 899,
+    "originalPrice": 1499,
+    "category": "home",
+    "rating": 4.4,
+    "reviewCount": 1200,
+    "image": "https://images.unsplash.com/photo-1602088113235-229c19758e9f?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1602088113235-229c19758e9f?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 200,
+    "brand": "HydroMax",
+    "features": ["Insulated", "24-hour cold", "Leak-proof", "5 colors"]
+  },
+  {
+    "id": "11",
+    "name": "Denim Classic Blue Jeans",
+    "description": "Timeless classic blue denim jeans with perfect fit and durability.",
+    "price": 1999,
+    "originalPrice": 3999,
+    "category": "fashion",
+    "rating": 4.3,
+    "reviewCount": 2300,
+    "image": "https://images.unsplash.com/photo-1542272604-787c62d465d1?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1542272604-787c62d465d1?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 120,
+    "brand": "DenimCo",
+    "features": ["100% Cotton", "Classic Fit", "Durable", "Multiple sizes"]
+  },
+  {
+    "id": "12",
+    "name": "Wireless Power Bank with Charging Pad",
+    "description": "10000mAh power bank with wireless charging for smartphones and earbuds.",
+    "price": 2299,
+    "originalPrice": 3499,
+    "category": "electronics",
+    "rating": 4.6,
+    "reviewCount": 890,
+    "image": "https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=400&h=400&fit=crop",
+    "images": ["https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=800&h=800&fit=crop"],
+    "inStock": true,
+    "stockCount": 110,
+    "brand": "ChargeWifi",
+    "features": ["10000mAh", "Wireless Charging", "Dual USB", "LED Display"]
+  },
+  {
+    "id": "13",
+"name":"Samsung Galaxy S23",
+"description":"Flagship smartphone with AMOLED display and powerful processor.",
+"price":74999,
+"originalPrice":84999,
+"category":"electronics",
+"rating":4.7,
+"reviewCount":1320,
+"image":"https://images.unsplash.com/photo-1511707171634-5f897ff02aa9",
+"images":["https://images.unsplash.com/photo-1511707171634-5f897ff02aa9"],
+"inStock":true,
+"stockCount":35,
+"brand":"Samsung",
+"features":["AMOLED Display","Snapdragon Processor","50MP Camera","Fast Charging"]
+},
+{
+"id":"14",
+"name":"Apple AirPods Pro",
+"description":"Premium wireless earbuds with noise cancellation.",
+"price":21999,
+"originalPrice":24999,
+"category":"electronics",
+"rating":4.8,
+"reviewCount":2100,
+"image":"https://images.unsplash.com/photo-1588423771073-b8903fbb85b5",
+"images":["https://images.unsplash.com/photo-1588423771073-b8903fbb85b5"],
+"inStock":true,
+"stockCount":60,
+"brand":"Apple",
+"features":["Noise Cancellation","Spatial Audio","MagSafe Charging","Sweat Resistant"]
+},
+{
+"id":"15",
+"name":"Sony WH-1000XM5",
+"description":"Noise cancelling wireless headphones.",
+"price":29999,
+"originalPrice":34999,
+"category":"electronics",
+"rating":4.8,
+"reviewCount":980,
+"image":"https://images.unsplash.com/photo-1583394838336-acd977736f90",
+"images":["https://images.unsplash.com/photo-1583394838336-acd977736f90"],
+"inStock":true,
+"stockCount":40,
+"brand":"Sony",
+"features":["ANC","30Hr Battery","Touch Controls","Quick Charge"]
+},
+{
+"id":"16",
+"name":"Apple MacBook Air M2",
+"description":"Ultra thin laptop powered by Apple M2 chip.",
+"price":109999,
+"originalPrice":119999,
+"category":"electronics",
+"rating":4.9,
+"reviewCount":870,
+"image":"https://images.unsplash.com/photo-1517336714731-489689fd1ca8",
+"images":["https://images.unsplash.com/photo-1517336714731-489689fd1ca8"],
+"inStock":true,
+"stockCount":20,
+"brand":"Apple",
+"features":["M2 Chip","Retina Display","18Hr Battery","Lightweight"]
+},
+{
+"id":"17",
+"name":"Logitech MX Master 3 Mouse",
+"description":"Advanced wireless productivity mouse.",
+"price":8999,
+"originalPrice":10999,
+"category":"electronics",
+"rating":4.6,
+"reviewCount":720,
+"image":"https://images.unsplash.com/photo-1587829741301-dc798b83add3",
+"images":["https://images.unsplash.com/photo-1587829741301-dc798b83add3"],
+"inStock":true,
+"stockCount":90,
+"brand":"Logitech",
+"features":["Ergonomic","USB-C Charging","MagSpeed Scroll","Multi-device"]
+},
+{
+"id":"18",
+"name":"Dell 24 Inch Monitor",
+"description":"Full HD IPS monitor ideal for office work.",
+"price":12999,
+"originalPrice":15999,
+"category":"electronics",
+"rating":4.5,
+"reviewCount":450,
+"image":"https://images.unsplash.com/photo-1527443224154-c4a3942d3acf",
+"images":["https://images.unsplash.com/photo-1527443224154-c4a3942d3acf"],
+"inStock":true,
+"stockCount":25,
+"brand":"Dell",
+"features":["24 Inch","IPS Panel","HDMI","Anti-Glare"]
+},
+{
+"id":"19",
+"name":"JBL Flip 6 Speaker",
+"description":"Portable Bluetooth speaker with powerful bass.",
+"price":8999,
+"originalPrice":11999,
+"category":"electronics",
+"rating":4.7,
+"reviewCount":650,
+"image":"https://images.unsplash.com/photo-1589003077984-894e133dabab",
+"images":["https://images.unsplash.com/photo-1589003077984-894e133dabab"],
+"inStock":true,
+"stockCount":70,
+"brand":"JBL",
+"features":["Bluetooth","Waterproof","12Hr Battery","Deep Bass"]
+},
+{
+"id":"20",
+"name":"Canon DSLR Camera",
+"description":"Professional DSLR camera with 24MP sensor.",
+"price":55999,
+"originalPrice":62999,
+"category":"electronics",
+"rating":4.6,
+"reviewCount":390,
+"image":"https://images.unsplash.com/photo-1519183071298-a2962be96c1b",
+"images":["https://images.unsplash.com/photo-1519183071298-a2962be96c1b"],
+"inStock":true,
+"stockCount":18,
+"brand":"Canon",
+"features":["24MP","Dual Pixel AF","WiFi","Full HD"]
+},
+{
+"id":"21",
+"name":"Mi Smart Band 7",
+"description":"Fitness tracker with heart rate monitoring.",
+"price":3499,
+"originalPrice":4499,
+"category":"electronics",
+"rating":4.4,
+"reviewCount":1200,
+"image":"https://images.unsplash.com/photo-1551816230-ef5deaed4a26",
+"images":["https://images.unsplash.com/photo-1551816230-ef5deaed4a26"],
+"inStock":true,
+"stockCount":120,
+"brand":"Xiaomi",
+"features":["AMOLED","Heart Rate","Sleep Tracking","14 Day Battery"]
+},
+{
+"id":"22",
+"name":"HP Pavilion Laptop",
+"description":"Powerful laptop for daily work and study.",
+"price":64999,
+"originalPrice":72999,
+"category":"electronics",
+"rating":4.5,
+"reviewCount":500,
+"image":"https://images.unsplash.com/photo-1517433456452-f9633a875f6f",
+"images":["https://images.unsplash.com/photo-1517433456452-f9633a875f6f"],
+"inStock":true,
+"stockCount":22,
+"brand":"HP",
+"features":["Intel i5","16GB RAM","512GB SSD","Full HD"]
+},
+{
+"id":"23",
+"name":"Samsung 55\" Smart TV",
+"description":"4K UHD Smart TV with streaming apps.",
+"price":59999,
+"originalPrice":69999,
+"category":"electronics",
+"rating":4.7,
+"reviewCount":410,
+"image":"https://images.unsplash.com/photo-1593784991095-a205069470b6",
+"images":["https://images.unsplash.com/photo-1593784991095-a205069470b6"],
+"inStock":true,
+"stockCount":15,
+"brand":"Samsung",
+"features":["4K UHD","HDR","Smart Apps","Voice Control"]
+},
+{
+"id":"24",
+"name":"Boat Rockerz 450",
+"description":"Wireless headphones with deep bass.",
+"price":1499,
+"originalPrice":2999,
+"category":"electronics",
+"rating":4.3,
+"reviewCount":3100,
+"image":"https://images.unsplash.com/photo-1583394838336-acd977736f90",
+"images":["https://images.unsplash.com/photo-1583394838336-acd977736f90"],
+"inStock":true,
+"stockCount":200,
+"brand":"Boat",
+"features":["40mm Drivers","15Hr Battery","Bluetooth","Lightweight"]
+},
+{
+"id":"25",
+"name":"Amazon Echo Dot",
+"description":"Smart speaker with Alexa.",
+"price":4499,
+"originalPrice":5999,
+"category":"electronics",
+"rating":4.6,
+"reviewCount":900,
+"image":"https://images.unsplash.com/photo-1518441902110-7e1a1b6b8a73",
+"images":["https://images.unsplash.com/photo-1518441902110-7e1a1b6b8a73"],
+"inStock":true,
+"stockCount":80,
+"brand":"Amazon",
+"features":["Alexa","Smart Home","Compact","Voice Control"]
+},
+{
+"id":"26",
+"name":"Anker Power Bank",
+"description":"20000mAh fast charging power bank.",
+"price":3999,
+"originalPrice":4999,
+"category":"electronics",
+"rating":4.5,
+"reviewCount":650,
+"image":"https://images.unsplash.com/photo-1585386959984-a41552231658",
+"images":["https://images.unsplash.com/photo-1585386959984-a41552231658"],
+"inStock":true,
+"stockCount":150,
+"brand":"Anker",
+"features":["20000mAh","Fast Charge","Dual USB","Portable"]
+},
+{
+"id":"27",
+"name":"Apple Watch Series 9",
+"description":"Advanced smartwatch with health tracking.",
+"price":45999,
+"originalPrice":49999,
+"category":"electronics",
+"rating":4.8,
+"reviewCount":700,
+"image":"https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b",
+"images":["https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b"],
+"inStock":true,
+"stockCount":30,
+"brand":"Apple",
+"features":["Heart Rate","ECG","Fitness Tracking","Always On Display"]
+},
+{
+"id":"103",
+"name":"Atomic Habits",
+"description":"A bestselling self-improvement book that teaches how small habits can lead to remarkable results.",
+"price":499,
+"originalPrice":699,
+"category":"books",
+"rating":4.8,
+"reviewCount":12000,
+"image":"https://images.unsplash.com/photo-1512820790803-83ca734da794",
+"images":[
+"https://images.unsplash.com/photo-1512820790803-83ca734da794"
+],
+"inStock":true,
+"stockCount":120,
+"brand":"Penguin",
+"features":[
+"Self Improvement",
+"Easy to Understand",
+"Practical Strategies",
+"International Bestseller"
+]
+},
+
+{
+"id":"104",
+"name":"Rich Dad Poor Dad",
+"description":"A personal finance book that teaches financial literacy and wealth building.",
+"price":399,
+"originalPrice":599,
+"category":"books",
+"rating":4.7,
+"reviewCount":9800,
+"image":"https://images.unsplash.com/photo-1544947950-fa07a98d237f",
+"images":[
+"https://images.unsplash.com/photo-1544947950-fa07a98d237f"
+],
+"inStock":true,
+"stockCount":100,
+"brand":"Plata Publishing",
+"features":[
+"Finance Education",
+"Money Mindset",
+"Bestseller",
+"Investment Basics"
+]
+},
+
+{
+"id":"105",
+"name":"The Psychology of Money",
+"description":"A book explaining how psychology affects financial decisions.",
+"price":449,
+"originalPrice":699,
+"category":"books",
+"rating":4.8,
+"reviewCount":8700,
+"image":"https://images.unsplash.com/photo-1524578271613-d550eacf6090",
+"images":[
+"https://images.unsplash.com/photo-1524578271613-d550eacf6090"
+],
+"inStock":true,
+"stockCount":90,
+"brand":"Jaico Publishing",
+"features":[
+"Money Psychology",
+"Financial Wisdom",
+"Easy Stories",
+"Bestseller"
+]
+},
+
+{
+"id":"106",
+"name":"The Alchemist",
+"description":"A philosophical novel about following dreams and listening to the heart.",
+"price":299,
+"originalPrice":499,
+"category":"books",
+"rating":4.7,
+"reviewCount":15000,
+"image":"https://images.unsplash.com/photo-1519681393784-d120267933ba",
+"images":[
+"https://images.unsplash.com/photo-1519681393784-d120267933ba"
+],
+"inStock":true,
+"stockCount":110,
+"brand":"HarperCollins",
+"features":[
+"Inspirational Story",
+"Global Bestseller",
+"Motivational",
+"Easy Read"
+]
+},
+
+{
+"id":"107",
+"name":"Deep Work",
+"description":"A book about focused success in a distracted world.",
+"price":450,
+"originalPrice":650,
+"category":"books",
+"rating":4.6,
+"reviewCount":5400,
+"image":"https://images.unsplash.com/photo-1526243741027-444d633d7365",
+"images":[
+"https://images.unsplash.com/photo-1526243741027-444d633d7365"
+],
+"inStock":true,
+"stockCount":75,
+"brand":"Grand Central",
+"features":[
+"Productivity",
+"Focus Techniques",
+"Work Strategies",
+"Professional Growth"
+]
+},
+
+{
+"id":"108",
+"name":"Think and Grow Rich",
+"description":"Classic book on success mindset and wealth creation.",
+"price":349,
+"originalPrice":549,
+"category":"books",
+"rating":4.7,
+"reviewCount":10300,
+"image":"https://images.unsplash.com/photo-1495446815901-a7297e633e8d",
+"images":[
+"https://images.unsplash.com/photo-1495446815901-a7297e633e8d"
+],
+"inStock":true,
+"stockCount":95,
+"brand":"Success Library",
+"features":[
+"Success Principles",
+"Mindset Development",
+"Classic Book",
+"Motivational"
+]
+},
+
+{
+"id":"109",
+"name":"Ikigai",
+"description":"A Japanese philosophy book about finding purpose and happiness in life.",
+"price":399,
+"originalPrice":599,
+"category":"books",
+"rating":4.6,
+"reviewCount":8700,
+"image":"https://images.unsplash.com/photo-1521587760476-6c12a4b040da",
+"images":[
+"https://images.unsplash.com/photo-1521587760476-6c12a4b040da"
+],
+"inStock":true,
+"stockCount":85,
+"brand":"Penguin",
+"features":[
+"Japanese Philosophy",
+"Life Purpose",
+"Motivational",
+"Self Improvement"
+]
+},
+{
+"id":"110",
+"name":"Professional Cricket Bat",
+"description":"High-quality English willow cricket bat designed for professional and club-level players.",
+"price":4999,
+"originalPrice":6999,
+"category":"sports",
+"rating":4.6,
+"reviewCount":320,
+"image":"https://images.unsplash.com/photo-1593766787874-1c76c6c10c8d",
+"images":[
+"https://images.unsplash.com/photo-1593766787874-1c76c6c10c8d"
+],
+"inStock":true,
+"stockCount":40,
+"brand":"MRF",
+"features":[
+"English Willow",
+"Lightweight Design",
+"Excellent Balance",
+"Professional Grade"
+]
+},
+
+{
+"id":"111",
+"name":"Football Training Ball",
+"description":"Durable football designed for training and recreational matches.",
+"price":999,
+"originalPrice":1499,
+"category":"sports",
+"rating":4.4,
+"reviewCount":540,
+"image":"https://images.unsplash.com/photo-1517649763962-0c623066013b",
+"images":[
+"https://images.unsplash.com/photo-1517649763962-0c623066013b"
+],
+"inStock":true,
+"stockCount":120,
+"brand":"Adidas",
+"features":[
+"Durable Material",
+"Excellent Grip",
+"Standard Size 5",
+"Training Ready"
+]
+},
+
+{
+"id":"112",
+"name":"Badminton Racket Set",
+"description":"Lightweight badminton racket set ideal for beginners and intermediate players.",
+"price":1499,
+"originalPrice":2199,
+"category":"sports",
+"rating":4.5,
+"reviewCount":280,
+"image":"https://images.unsplash.com/photo-1613919113640-25732ec5e61f",
+"images":[
+"https://images.unsplash.com/photo-1613919113640-25732ec5e61f"
+],
+"inStock":true,
+"stockCount":75,
+"brand":"Yonex",
+"features":[
+"Lightweight Frame",
+"Strong Strings",
+"Comfort Grip",
+"Beginner Friendly"
+]
+},
+
+{
+"id":"113",
+"name":"Yoga Exercise Mat",
+"description":"Anti-slip yoga mat suitable for yoga, stretching, and home workouts.",
+"price":799,
+"originalPrice":1299,
+"category":"sports",
+"rating":4.6,
+"reviewCount":610,
+"image":"https://images.unsplash.com/photo-1599058917212-d750089bc07e",
+"images":[
+"https://images.unsplash.com/photo-1599058917212-d750089bc07e"
+],
+"inStock":true,
+"stockCount":150,
+"brand":"Boldfit",
+"features":[
+"Anti Slip Surface",
+"Comfort Cushioning",
+"Lightweight",
+"Easy to Carry"
+]
+},
+
+{
+"id":"114",
+"name":"Adjustable Dumbbell Set",
+"description":"Home workout dumbbell set perfect for strength training and fitness routines.",
+"price":2999,
+"originalPrice":4499,
+"category":"sports",
+"rating":4.7,
+"reviewCount":410,
+"image":"https://images.unsplash.com/photo-1517836357463-d25dfeac3438",
+"images":[
+"https://images.unsplash.com/photo-1517836357463-d25dfeac3438"
+],
+"inStock":true,
+"stockCount":60,
+"brand":"Kore",
+"features":[
+"Adjustable Weights",
+"Strong Metal Rod",
+"Non Slip Grip",
+"Home Gym Ready"
+]
+},
+
+{
+"id":"115",
+"name":"Cycling Helmet",
+"description":"Protective cycling helmet designed for safety and comfort during rides.",
+"price":1299,
+"originalPrice":1999,
+"category":"sports",
+"rating":4.5,
+"reviewCount":260,
+"image":"https://images.unsplash.com/photo-1518655048521-f130df041f66",
+"images":[
+"https://images.unsplash.com/photo-1518655048521-f130df041f66"
+],
+"inStock":true,
+"stockCount":90,
+"brand":"Decathlon",
+"features":[
+"Lightweight Design",
+"Impact Protection",
+"Adjustable Strap",
+"Ventilation Holes"
+]
+},
+{
+"id":"116",
+"name":"Men Classic Denim Jacket",
+"description":"Stylish denim jacket designed for casual and street fashion.",
+"price":2499,
+"originalPrice":3999,
+"category":"fashion",
+"rating":4.5,
+"reviewCount":420,
+"image":"https://images.unsplash.com/photo-1541099649105-f69ad21f3246",
+"images":[
+"https://images.unsplash.com/photo-1541099649105-f69ad21f3246"
+],
+"inStock":true,
+"stockCount":70,
+"brand":"Levis",
+"features":[
+"Premium Denim Fabric",
+"Comfort Fit",
+"Durable Stitching",
+"All Season Wear"
+]
+},
+
+{
+"id":"117",
+"name":"Women Floral Summer Dress",
+"description":"Lightweight floral dress perfect for casual outings and summer wear.",
+"price":1799,
+"originalPrice":2999,
+"category":"fashion",
+"rating":4.6,
+"reviewCount":360,
+"image":"https://images.unsplash.com/photo-1490481651871-ab68de25d43d",
+"images":[
+"https://images.unsplash.com/photo-1490481651871-ab68de25d43d"
+],
+"inStock":true,
+"stockCount":80,
+"brand":"Zara",
+"features":[
+"Breathable Fabric",
+"Elegant Floral Design",
+"Comfort Fit",
+"Summer Friendly"
+]
+},
+
+{
+"id":"118",
+"name":"Men Running Sneakers",
+"description":"Lightweight running sneakers designed for comfort and performance.",
+"price":3499,
+"originalPrice":4999,
+"category":"fashion",
+"rating":4.4,
+"reviewCount":700,
+"image":"https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+"images":[
+"https://images.unsplash.com/photo-1542291026-7eec264c27ff"
+],
+"inStock":true,
+"stockCount":120,
+"brand":"Nike",
+"features":[
+"Breathable Mesh",
+"Shock Absorption",
+"Comfort Cushion",
+"Durable Sole"
+]
+},
+
+{
+"id":"119",
+"name":"Women Leather Handbag",
+"description":"Elegant handbag with spacious compartments and premium leather finish.",
+"price":2299,
+"originalPrice":3499,
+"category":"fashion",
+"rating":4.5,
+"reviewCount":210,
+"image":"https://images.unsplash.com/photo-1591561954557-26941169b49e",
+"images":[
+"https://images.unsplash.com/photo-1591561954557-26941169b49e"
+],
+"inStock":true,
+"stockCount":60,
+"brand":"Michael Kors",
+"features":[
+"Premium Leather",
+"Spacious Compartments",
+"Elegant Design",
+"Durable Material"
+]
+},
+
+{
+"id":"120",
+"name":"Men Formal Cotton Shirt",
+"description":"Premium cotton formal shirt suitable for office and business wear.",
+"price":1299,
+"originalPrice":1999,
+"category":"fashion",
+"rating":4.3,
+"reviewCount":530,
+"image":"https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf",
+"images":[
+"https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf"
+],
+"inStock":true,
+"stockCount":100,
+"brand":"Arrow",
+"features":[
+"100% Cotton",
+"Regular Fit",
+"Breathable Fabric",
+"Office Wear"
+]
+},
+
+{
+"id":"121",
+"name":"Unisex Hoodie Sweatshirt",
+"description":"Comfortable hoodie sweatshirt perfect for winter and casual wear.",
+"price":1999,
+"originalPrice":2999,
+"category":"fashion",
+"rating":4.6,
+"reviewCount":450,
+"image":"https://images.unsplash.com/photo-1556821840-3a63f95609a7",
+"images":[
+"https://images.unsplash.com/photo-1556821840-3a63f95609a7"
+],
+"inStock":true,
+"stockCount":90,
+"brand":"H&M",
+"features":[
+"Soft Fabric",
+"Warm Material",
+"Stylish Design",
+"Unisex Fit"
+]
+},
+
+{
+"id":"122",
+"name":"Women Stylish Sunglasses",
+"description":"Trendy sunglasses with UV protection and lightweight frame.",
+"price":899,
+"originalPrice":1499,
+"category":"fashion",
+"rating":4.4,
+"reviewCount":310,
+"image":"https://images.unsplash.com/photo-1511499767150-a48a237f0083",
+"images":[
+"https://images.unsplash.com/photo-1511499767150-a48a237f0083"
+],
+"inStock":true,
+"stockCount":140,
+"brand":"RayBan",
+"features":[
+"UV Protection",
+"Lightweight Frame",
+"Modern Design",
+"Comfort Fit"
+]
+},
+
+{
+"id":"123",
+"name":"Men Slim Fit Jeans",
+"description":"Stylish slim fit jeans made with stretchable denim fabric.",
+"price":1999,
+"originalPrice":3299,
+"category":"fashion",
+"rating":4.5,
+"reviewCount":620,
+"image":"https://images.unsplash.com/photo-1542272604-787c3835535d",
+"images":[
+"https://images.unsplash.com/photo-1542272604-787c3835535d"
+],
+"inStock":true,
+"stockCount":110,
+"brand":"Wrangler",
+"features":[
+"Stretchable Denim",
+"Slim Fit",
+"Comfort Wear",
+"Durable Fabric"
+]
+},
+{
+"id":"124",
+"name":"Modern Wooden Coffee Table",
+"description":"Elegant wooden coffee table designed for modern living rooms.",
+"price":5999,
+"originalPrice":8999,
+"category":"home",
+"rating":4.5,
+"reviewCount":180,
+"image":"https://images.unsplash.com/photo-1586023492125-27b2c045efd7",
+"images":[
+"https://images.unsplash.com/photo-1586023492125-27b2c045efd7"
+],
+"inStock":true,
+"stockCount":25,
+"brand":"IKEA",
+"features":[
+"Solid Wood",
+"Modern Design",
+"Durable Build",
+"Easy Assembly"
+]
+},
+
+{
+"id":"125",
+"name":"LED Bedside Table Lamp",
+"description":"Minimalist bedside lamp with warm LED lighting for bedrooms.",
+"price":1299,
+"originalPrice":1999,
+"category":"home",
+"rating":4.6,
+"reviewCount":340,
+"image":"https://images.unsplash.com/photo-1507473885765-e6ed057f782c",
+"images":[
+"https://images.unsplash.com/photo-1507473885765-e6ed057f782c"
+],
+"inStock":true,
+"stockCount":80,
+"brand":"Philips",
+"features":[
+"Energy Efficient LED",
+"Warm Lighting",
+"Compact Design",
+"Long Lifespan"
+]
+},
+
+{
+"id":"126",
+"name":"Non-Stick Cookware Set",
+"description":"Premium non-stick cookware set ideal for everyday cooking.",
+"price":3499,
+"originalPrice":4999,
+"category":"home",
+"rating":4.7,
+"reviewCount":520,
+"image":"https://images.unsplash.com/photo-1584990347449-a5d6d02d0f3c",
+"images":[
+"https://images.unsplash.com/photo-1584990347449-a5d6d02d0f3c"
+],
+"inStock":true,
+"stockCount":60,
+"brand":"Prestige",
+"features":[
+"Non Stick Coating",
+"Even Heat Distribution",
+"Scratch Resistant",
+"Easy Cleaning"
+]
+},
+
+{
+"id":"127",
+"name":"Stainless Steel Knife Set",
+"description":"Professional kitchen knife set with sharp stainless steel blades.",
+"price":1999,
+"originalPrice":2999,
+"category":"home",
+"rating":4.5,
+"reviewCount":270,
+"image":"https://images.unsplash.com/photo-1506806732259-39c2d0268443",
+"images":[
+"https://images.unsplash.com/photo-1506806732259-39c2d0268443"
+],
+"inStock":true,
+"stockCount":70,
+"brand":"Pigeon",
+"features":[
+"Stainless Steel",
+"Sharp Edge",
+"Ergonomic Handle",
+"Long Lasting"
+]
+},
+
+{
+"id":"128",
+"name":"Wall Mounted Clock",
+"description":"Stylish wall clock perfect for home and office decoration.",
+"price":799,
+"originalPrice":1299,
+"category":"home",
+"rating":4.4,
+"reviewCount":310,
+"image":"https://images.unsplash.com/photo-1509042239860-f550ce710b93",
+"images":[
+"https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+],
+"inStock":true,
+"stockCount":120,
+"brand":"Ajanta",
+"features":[
+"Silent Movement",
+"Modern Design",
+"Durable Frame",
+"Easy Installation"
+]
+},
+
+{
+"id":"129",
+"name":"Cotton Sofa Cushion Set",
+"description":"Soft cotton cushion set designed for comfort and home decor.",
+"price":1499,
+"originalPrice":2299,
+"category":"home",
+"rating":4.5,
+"reviewCount":200,
+"image":"https://images.unsplash.com/photo-1616628182506-8c4e9b2c44d0",
+"images":[
+"https://images.unsplash.com/photo-1616628182506-8c4e9b2c44d0"
+],
+"inStock":true,
+"stockCount":85,
+"brand":"Home Centre",
+"features":[
+"Soft Cotton",
+"Comfortable",
+"Stylish Patterns",
+"Washable Fabric"
+]
+},
+
+{
+"id":"130",
+"name":"Indoor Decorative Plant Pot",
+"description":"Ceramic indoor plant pot perfect for decorating living spaces.",
+"price":699,
+"originalPrice":1099,
+"category":"home",
+"rating":4.6,
+"reviewCount":260,
+"image":"https://images.unsplash.com/photo-1501004318641-b39e6451bec6",
+"images":[
+"https://images.unsplash.com/photo-1501004318641-b39e6451bec6"
+],
+"inStock":true,
+"stockCount":140,
+"brand":"Ugaoo",
+"features":[
+"Premium Ceramic",
+"Stylish Design",
+"Lightweight",
+"Indoor Decor"
+]
+},
+
+{
+"id":"131",
+"name":"Electric Kettle 1.5L",
+"description":"Fast boiling electric kettle suitable for tea and coffee preparation.",
+"price":1399,
+"originalPrice":1999,
+"category":"home",
+"rating":4.7,
+"reviewCount":480,
+"image":"https://images.unsplash.com/photo-1579888944880-d98341245702",
+"images":[
+"https://images.unsplash.com/photo-1579888944880-d98341245702"
+],
+"inStock":true,
+"stockCount":95,
+"brand":"Philips",
+"features":[
+"1.5L Capacity",
+"Auto Shut Off",
+"Fast Boiling",
+"Stainless Steel Body"
+]
+},
+
+{
+"id":"132",
+"name":"Vitamin C Face Serum",
+"description":"Brightening face serum with Vitamin C to improve skin glow and reduce dark spots.",
+"price":799,
+"originalPrice":1299,
+"category":"beauty",
+"rating":4.5,
+"reviewCount":1100,
+"image":"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19",
+"images":[
+"https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19"
+],
+"inStock":true,
+"stockCount":200,
+"brand":"Minimalist",
+"features":[
+"Vitamin C Formula",
+"Reduces Dark Spots",
+"Brightens Skin",
+"Lightweight Serum"
+]
+},
+
+{
+"id":"133",
+"name":"Hydrating Aloe Vera Gel",
+"description":"Natural aloe vera gel for soothing, moisturizing, and refreshing the skin.",
+"price":299,
+"originalPrice":499,
+"category":"beauty",
+"rating":4.6,
+"reviewCount":850,
+"image":"https://images.unsplash.com/photo-1596755389378-c31d21fd1273",
+"images":[
+"https://images.unsplash.com/photo-1596755389378-c31d21fd1273"
+],
+"inStock":true,
+"stockCount":180,
+"brand":"Patanjali",
+"features":[
+"Natural Aloe Extract",
+"Skin Hydration",
+"Cooling Effect",
+"Multipurpose Use"
+]
+},
+
+{
+"id":"134",
+"name":"Gentle Face Wash",
+"description":"Refreshing face wash that removes dirt and oil while keeping skin hydrated.",
+"price":249,
+"originalPrice":399,
+"category":"beauty",
+"rating":4.4,
+"reviewCount":640,
+"image":"https://images.unsplash.com/photo-1556228724-4b26c3d4c0c7",
+"images":[
+"https://images.unsplash.com/photo-1556228724-4b26c3d4c0c7"
+],
+"inStock":true,
+"stockCount":220,
+"brand":"Himalaya",
+"features":[
+"Deep Cleansing",
+"Oil Control",
+"Skin Friendly",
+"Daily Use"
+]
+},
+
+{
+"id":"135",
+"name":"SPF 50 Sunscreen Lotion",
+"description":"High protection sunscreen lotion that shields skin from harmful UV rays.",
+"price":399,
+"originalPrice":599,
+"category":"beauty",
+"rating":4.6,
+"reviewCount":720,
+"image":"https://images.unsplash.com/photo-1598662972299-5408ddb8a3dc",
+"images":[
+"https://images.unsplash.com/photo-1598662972299-5408ddb8a3dc"
+],
+"inStock":true,
+"stockCount":150,
+"brand":"Neutrogena",
+"features":[
+"SPF 50 Protection",
+"Water Resistant",
+"Lightweight Texture",
+"UV Protection"
+]
+},
+
+{
+"id":"136",
+"name":"Hair Repair Shampoo",
+"description":"Nourishing shampoo that strengthens hair and reduces hair fall.",
+"price":499,
+"originalPrice":699,
+"category":"beauty",
+"rating":4.5,
+"reviewCount":580,
+"image":"https://images.unsplash.com/photo-1585238342028-4e2aefc0f3e0",
+"images":[
+"https://images.unsplash.com/photo-1585238342028-4e2aefc0f3e0"
+],
+"inStock":true,
+"stockCount":130,
+"brand":"L'Oreal",
+"features":[
+"Hair Strengthening",
+"Smooth Hair",
+"Damage Repair",
+"Shiny Finish"
+]
+},
+
+{
+"id":"137",
+"name":"Matte Lipstick",
+"description":"Long lasting matte lipstick with smooth application and vibrant color.",
+"price":349,
+"originalPrice":549,
+"category":"beauty",
+"rating":4.4,
+"reviewCount":470,
+"image":"https://images.unsplash.com/photo-1586495777744-4413f21062fa",
+"images":[
+"https://images.unsplash.com/photo-1586495777744-4413f21062fa"
+],
+"inStock":true,
+"stockCount":200,
+"brand":"Maybelline",
+"features":[
+"Matte Finish",
+"Long Lasting",
+"Smooth Texture",
+"Highly Pigmented"
+]
+},
+
+{
+"id":"138",
+"name":"Moisturizing Body Lotion",
+"description":"Hydrating body lotion that keeps skin soft and nourished all day.",
+"price":399,
+"originalPrice":599,
+"category":"beauty",
+"rating":4.6,
+"reviewCount":510,
+"image":"https://images.unsplash.com/photo-1580870069867-74c57ee1bb07",
+"images":[
+"https://images.unsplash.com/photo-1580870069867-74c57ee1bb07"
+],
+"inStock":true,
+"stockCount":160,
+"brand":"Nivea",
+"features":[
+"Deep Moisturization",
+"Soft Skin",
+"Fast Absorption",
+"Long Lasting Hydration"
+]
+}
+]

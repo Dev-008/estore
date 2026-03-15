@@ -55,7 +55,8 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://estore-puce.vercel.app",
-      "https://estore-7igzrkvpi-dev-008s-projects.vercel.app"
+      "https://estore-7igzrkvpi-dev-008s-projects.vercel.app",
+      "https://estore-2pd9j9i48-dev-008s-projects.vercel.app"
     ],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true

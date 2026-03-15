@@ -52,14 +52,13 @@ const allowedOrigins = [
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error('CORS not allowed'));
-      }
-    },
-    credentials: true,
+    origin: [
+      "http://localhost:5173",
+      "https://estore-puce.vercel.app",
+      "https://estore-7igzrkvpi-dev-008s-projects.vercel.app"
+    ],
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
   })
 );
 

@@ -47,7 +47,7 @@ const AddProductModal = ({ onClose, onSuccess }: AddProductModalProps) => {
 
     // Validation
     if (!formData.id || !formData.name || !formData.price || !formData.category) {
-      setError("Please fill in all required fields");
+      setError("Please fill in all required fields: ID, Name, Price, Category");
       return;
     }
 
@@ -55,40 +55,50 @@ const AddProductModal = ({ onClose, onSuccess }: AddProductModalProps) => {
 
     try {
       const token = localStorage.getItem("adminToken");
-      const payload = {
-        id: formData.id,
-        name: formData.name,
-        description: formData.description,
-        price: parseInt(formData.price),
-        originalPrice: parseInt(formData.originalPrice || formData.price),
-        category: formData.category,
-        brand: formData.brand,
-        image: formData.image || "https://via.placeholder.com/400",
-        images: [formData.image || "https://via.placeholder.com/400"],
+
+      const productData = {
+        id: formData.id.trim(),
+        name: formData.name.trim(),
+        description: formData.description.trim(),
+        price: Number(formData.price),
+        originalPrice: Number(formData.originalPrice || formData.price),
+        category: formData.category.toLowerCase(),
+        rating: Number(formData.rating || 0),
+        reviewCount: Number(formData.reviewCount || 0),
+        image: formData.image.trim() || "https://via.placeholder.com/400",
+        images: [formData.image.trim() || "https://via.placeholder.com/400"],
         inStock: formData.inStock,
-        stockCount: parseInt(formData.stockCount || "0"),
-        rating: parseFloat(formData.rating || "0"),
-        reviewCount: parseInt(formData.reviewCount || "0"),
+        stockCount: Number(formData.stockCount || 0),
+        brand: formData.brand.trim(),
         features: formData.features.split(",").map((f) => f.trim()).filter(Boolean),
       };
 
-      const response = await apiClient.post<ApiResponse<any>>(
-        "/api/admin/products",
-        payload,
-        {
-          headers: { Authorization: `Bearer ${token}` },
-        }
-      );
+      console.log("Sending payload:", productData);
 
-      if (response.success) {
-        toast.success("Product added successfully!");
-        onSuccess();
-      } else {
-        setError(response.message || "Failed to add product");
-        toast.error(response.message || "Failed to add product");
+      const response = await fetch("/api/admin/products", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(productData),
+      });
+
+      const data = await response.json();
+      console.log("Response:", data);
+
+      if (!response.ok) {
+        setError(data.message || `Error: ${response.status} ${response.statusText}`);
+        toast.error(data.message || "Failed to add product");
+        return;
       }
+
+      toast.success("Product added successfully!");
+      onSuccess();
+      onClose();
     } catch (err: any) {
-      const errorMessage = err.response?.data?.message || "Error adding product";
+      console.error("Error:", err);
+      const errorMessage = err.message || "Error adding product";
       setError(errorMessage);
       toast.error(errorMessage);
     } finally {

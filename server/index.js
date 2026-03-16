@@ -42,24 +42,21 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 
 // Middleware
 const allowedOrigins = [
-  FRONTEND_URL,
-  'http://localhost:8080',
-  'http://localhost:8081',
-  'http://localhost:8082',
-  'http://localhost:5173',
-  'http://localhost:3000',
+  "http://localhost:5173",
+  "https://estore-puce.vercel.app",
+  "https://estore-git-main-dev-008s-projects.vercel.app"
 ];
 
 app.use(
   cors({
-    origin: (origin, callback) => {
+    origin: function (origin, callback) {
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true);
       } else {
-        callback(new Error('CORS not allowed'));
+        callback(new Error("CORS not allowed"));
       }
     },
-    credentials: true,
+    credentials: true
   })
 );
 

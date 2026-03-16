@@ -55,6 +55,15 @@ const AddProductModal = ({ onClose, onSuccess }: AddProductModalProps) => {
 
     try {
       const token = localStorage.getItem("adminToken");
+      console.log("Token from localStorage:", token);
+      
+      if (!token) {
+        setError("You are not logged in. Please log in again.");
+        toast.error("Session expired. Please log in again.");
+        setLoading(false);
+        return;
+      }
+
       const productData = {
         id: formData.id.trim(),
         name: formData.name.trim(),

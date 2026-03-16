@@ -88,7 +88,7 @@ const AdminDashboard = () => {
       if (debouncedSearch) queryParams.append("search", debouncedSearch);
       
       const response = await apiClient.get<ApiResponse<Product[]>>(
-        `/api/admin/products?${queryParams.toString()}`,
+        `/api/products?${queryParams.toString()}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }
@@ -124,7 +124,7 @@ const AdminDashboard = () => {
     try {
       const token = localStorage.getItem("adminToken");
       const response = await apiClient.delete<ApiResponse<boolean>>(
-        `/api/admin/products/${productId}`,
+        `/api/products/${productId}`,
         {
           headers: { Authorization: `Bearer ${token}` },
         }

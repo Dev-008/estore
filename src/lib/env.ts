@@ -28,7 +28,7 @@ function getEnvVariable(key: string, fallback?: string): string {
 }
 
 export const env: EnvConfig = {
-  apiUrl: getEnvVariable("API_URL", "http://localhost:5000"),
+  apiUrl: getEnvVariable("API_URL", "https://estore-86q6.onrender.com"),
   appName: getEnvVariable("APP_NAME", "storeMX"),
   appVersion: getEnvVariable("APP_VERSION", "1.0.0"),
 };

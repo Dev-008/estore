@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { X, Plus, Loader, AlertCircle } from "lucide-react";
 import { toast } from "sonner";
-import apiClient from "../../lib/apiClient";
+import env from "../../lib/env";
 
 interface AddProductModalProps {
   onClose: () => void;
@@ -74,7 +74,7 @@ const AddProductModal = ({ onClose, onSuccess }: AddProductModalProps) => {
 
       console.log("Sending payload:", productData);
 
-      const response = await fetch("/api/admin/products", {
+      const response = await fetch(`${env.apiUrl}/api/admin/products`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { X, Edit2, Loader, AlertCircle } from "lucide-react";
 import { toast } from "sonner";
-import apiClient from "../../lib/apiClient";
+import env from "../../lib/env";
 
 interface Product {
   id: string;
@@ -81,23 +81,31 @@ const EditProductModal = ({ product, onClose, onSuccess }: EditProductModalProps
         features: formData.features.split(",").map((f) => f.trim()).filter(Boolean),
       };
 
-      const response = await apiClient.put<ApiResponse<any>>(
-        `/api/admin/products/${product.id}`,
-        payload,
-        {
-          headers: { Authorization: `Bearer ${token}` },
-        }
-      );
+      const response = await fetch(`${env.apiUrl}/api/admin/products/${product.id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify(payload),
+      });
 
-      if (response.success) {
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.message || `Error: ${response.statusText}`);
+      }
+
+      const data = await response.json();
+
+      if (data.success) {
         toast.success("Product updated successfully!");
         onSuccess();
       } else {
-        setError(response.message || "Failed to update product");
-        toast.error(response.message || "Failed to update product");
+        setError(data.message || "Failed to update product");
+        toast.error(data.message || "Failed to update product");
       }
     } catch (err: any) {
-      const errorMessage = err.response?.data?.message || "Error updating product";
+      const errorMessage = err.message || "Error updating product";
       setError(errorMessage);
       toast.error(errorMessage);
     } finally {

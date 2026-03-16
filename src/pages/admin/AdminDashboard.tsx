@@ -87,7 +87,7 @@ const AdminDashboard = () => {
       queryParams.append("limit", limit.toString());
       if (debouncedSearch) queryParams.append("search", debouncedSearch);
       
-      const response = await fetch(`${env.apiUrl}/api/products?${queryParams.toString()}`, {
+      const response = await fetch(`${env.apiUrl}/api/admin/products?${queryParams.toString()}`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",
@@ -130,7 +130,7 @@ const AdminDashboard = () => {
 
     try {
       const token = localStorage.getItem("adminToken");
-      const response = await fetch(`${env.apiUrl}/api/products/${productId}`, {
+      const response = await fetch(`${env.apiUrl}/api/admin/products/${productId}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

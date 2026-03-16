@@ -61,7 +61,7 @@ const AddProductModal = ({ onClose, onSuccess }: AddProductModalProps) => {
         description: formData.description,
         price: parseInt(formData.price),
         originalPrice: parseInt(formData.originalPrice || formData.price),
-        category: formData.category,
+        category: formData.category.toLowerCase(),
         brand: formData.brand,
         image: formData.image || "https://via.placeholder.com/400",
         images: [formData.image || "https://via.placeholder.com/400"],

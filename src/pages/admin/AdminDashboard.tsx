@@ -13,7 +13,7 @@ import {
   Loader,
 } from "lucide-react";
 import { toast } from "sonner";
-import apiClient from "../../lib/apiClient";
+import env from "../../lib/env";
 import AddProductModal from "@/components/admin/AddProductModal";
 import EditProductModal from "@/components/admin/EditProductModal";
 
@@ -87,22 +87,29 @@ const AdminDashboard = () => {
       queryParams.append("limit", limit.toString());
       if (debouncedSearch) queryParams.append("search", debouncedSearch);
       
-      const response = await apiClient.get<ApiResponse<Product[]>>(
-        `/api/products?${queryParams.toString()}`,
-        {
-          headers: { Authorization: `Bearer ${token}` },
-        }
-      );
+      const response = await fetch(`${env.apiUrl}/api/products?${queryParams.toString()}`, {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-      if (response.success && response.data) {
-        setProducts(response.data);
-        setTotalPages(response.pagination?.pages || 0);
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.statusText}`);
+      }
+
+      const data: ApiResponse<Product[]> = await response.json();
+
+      if (data.success && data.data) {
+        setProducts(data.data);
+        setTotalPages(data.pagination?.pages || 0);
       } else {
-        toast.error(response.message || "Failed to fetch products");
+        toast.error(data.message || "Failed to fetch products");
       }
     } catch (error: any) {
       toast.error(error.message || "Error fetching products");
-      if (error.response?.status === 401) {
+      if (error.status === 401) {
         localStorage.removeItem("adminToken");
         navigate("/admin/login");
       }
@@ -123,19 +130,26 @@ const AdminDashboard = () => {
 
     try {
       const token = localStorage.getItem("adminToken");
-      const response = await apiClient.delete<ApiResponse<boolean>>(
-        `/api/products/${productId}`,
-        {
-          headers: { Authorization: `Bearer ${token}` },
-        }
-      );
+      const response = await fetch(`${env.apiUrl}/api/products/${productId}`, {
+        method: "DELETE",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`,
+        },
+      });
 
-      if (response.success) {
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.statusText}`);
+      }
+
+      const data: ApiResponse<boolean> = await response.json();
+
+      if (data.success) {
         toast.success("Product deleted successfully!");
         setPage(1);
         fetchProducts();
       } else {
-        toast.error(response.message || "Failed to delete product");
+        toast.error(data.message || "Failed to delete product");
       }
     } catch (error: any) {
       toast.error(error.message || "Error deleting product");

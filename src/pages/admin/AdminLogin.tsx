@@ -41,8 +41,10 @@ const AdminLogin = () => {
 
       if (response.success && response.token) {
         // Store token in localStorage
+        console.log("Login successful! Token:", response.token);
         localStorage.setItem("adminToken", response.token);
         localStorage.setItem("adminUser", JSON.stringify(response.admin));
+        console.log("Token saved to localStorage:", localStorage.getItem("adminToken"));
 
         toast.success("Login successful!");
         navigate("/admin/dashboard");

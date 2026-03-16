@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { X, Plus, Loader, AlertCircle } from "lucide-react";
 import { toast } from "sonner";
-import env from "../../lib/env";
+import apiClient from "../../lib/apiClient";
 
 interface AddProductModalProps {
   onClose: () => void;
@@ -83,23 +83,17 @@ const AddProductModal = ({ onClose, onSuccess }: AddProductModalProps) => {
 
       console.log("Sending payload:", productData);
 
-      const response = await fetch(`${env.apiUrl}/api/admin/products`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
-        body: JSON.stringify(productData),
-      });
+      const result = await apiClient.post<ApiResponse<any>>(
+        "/api/admin/products",
+        productData,
+        {
+          headers: {
+            "Authorization": `Bearer ${token}`,
+          },
+        }
+      );
 
-      const data = await response.json();
-      console.log("Response:", data);
-
-      if (!response.ok) {
-        setError(data.message || `Error: ${response.status} ${response.statusText}`);
-        toast.error(data.message || "Failed to add product");
-        return;
-      }
+      console.log("Response:", result);
 
       toast.success("Product added successfully!");
       onSuccess();

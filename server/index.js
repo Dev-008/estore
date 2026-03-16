@@ -44,7 +44,8 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const allowedOrigins = [
   "http://localhost:5173",
   "https://estore-puce.vercel.app",
-  "https://estore-git-main-dev-008s-projects.vercel.app"
+  "https://estore-git-main-dev-008s-projects.vercel.app",
+  "https://estore-khaki.vercel.app"
 ];
 
 app.use(
